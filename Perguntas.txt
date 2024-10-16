@@ -4,5 +4,9 @@
     A operação de Pop serve para armazenar de forma temporária as mudanças que foram adicionadas través comando git add. Esta operação é usada em consonância com o stash, 
     o git stash guarda temperariamente as mudanças, o git stash pop recupera as mudanças que foram guardadas temporariamente no stash.
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
+    Isolamento - o isolamento permite o desenvolvimento das funcionalidades do sistema de maneira separada: para cada funcionalidade do sistema, criar-se-á uma branch para implementar
+    novos recursos ou realizar teste e correções;
+    Estabilidade - a estabilidade permitirá solidez do sistema com um todo. Existirá uma branch principal (main ou master) que combinará as mudanças de diferentes branches (desde que testes
+    e correções tenham sido feitas), assim o sistema em produção não é quebrado.
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?
