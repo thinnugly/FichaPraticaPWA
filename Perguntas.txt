@@ -9,6 +9,10 @@
     Estabilidade - a estabilidade permitirá solidez do sistema com um todo. Existirá uma branch principal (main ou master) que combinará as mudanças de diferentes branches (desde que testes
     e correções tenham sido feitas), assim o sistema em produção não é quebrado.
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?
+    Os Merges de conteúdos recuperados pelo Pop consiste em situações em que o Git não consegue mesclar de forma automática as mudanças de duas fontes diferentes devido a alterações 
+    conflitantes nos mesmos arquivos. Em situações como estas, o Git mostrará o arquivo conflitante e no seu interior estarão descadas as alterações da branch atual (<<<<<<< HEAD) e as alterações 
+    do stash (>>>>>>> stash). Manualmente, o desenvolvedor, pode escolher qual versão deseja manter. Subsequentemente, adicionar as mudanças (git add), armazenar as mudanças adicionadas (git commit),
+    e por fim, enviar o estado atual do código ao repositório remoto.
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?
     O Clone baixa uma cópia completa de um repositório existente para a máquina local, mantendo um vinculo entre o repositório clonado e o repositório original. As alterações locais podem ser
     enviadas (push - desde que se tenha permissão para o efeito). Por outra, o Fork, cria uma cópia independente de um repositório no seu próprio perfil (de quem clona). O repositório original
