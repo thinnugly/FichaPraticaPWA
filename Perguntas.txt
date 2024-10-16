@@ -10,3 +10,6 @@
     e correções tenham sido feitas), assim o sistema em produção não é quebrado.
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?
+    O Clone baixa uma cópia completa de um repositório existente para a máquina local, mantendo um vinculo entre o repositório clonado e o repositório original. As alterações locais podem ser
+    enviadas (push - desde que se tenha permissão para o efeito). Por outra, o Fork, cria uma cópia independente de um repositório no seu próprio perfil (de quem clona). O repositório original
+    não é afetado diretamente pelas alterações, a menos que se faça um pull request para sugerir mudanças.
